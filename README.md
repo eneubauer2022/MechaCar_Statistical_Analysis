@@ -27,3 +27,24 @@ If we look at the total summary, it seems that maufacturing is meeting the desig
 However, once we breakdown those data points by manufacturing lots - we notice that Lot 3 has a high variance og 170.29, exceeding the 100 pounds per square inch specifications. Lots 1 & 2 fall under those weight specifications. 
 
 ![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/lot%20summary.png)
+
+
+## T-Tests on Suspension Coils
+
+Using our knowledge of R, we performed the below T-Tests on all the lots and then each lot to see if there was any statistical difference. We used a mean of 1,500 for the mean. 
+
+T-Test for All Lots. There was no statistical difference because the p-value was greater than 0.05.
+
+![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/t.test.png)
+
+T. Test of Lot 1. There was no statistical difference because the p-value was greater than 0.05.
+
+![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/lot1.png)
+
+T. Test of Lot 2. There was no statistical difference because the p-value was greater than 0.05.
+
+![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/lot2.png)
+
+T. Test of Lot 3. There was a statistical difference because the p-value was less than 0.05.
+
+![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/lot3.png)
