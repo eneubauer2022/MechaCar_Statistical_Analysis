@@ -15,3 +15,6 @@
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
   Since we have a R-squared value of 0.71, we can determine that 71% of mpg is explained by the variables of our dataframame. I would feel comfortable using this model as as predictor of mpg for MechCar prototypes. 
+
+## Summary Statistics on Suspension Coils
+
