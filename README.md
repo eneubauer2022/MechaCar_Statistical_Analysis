@@ -1,5 +1,21 @@
 # MechaCar_Statistical_Analysis
 
+## Background
+
+A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+
+In this challenge, you’ll help Jeremy and the data analytics team do the following:
+
+Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
+
+- Deliverable 1: Linear Regression to Predict MPG
+- Deliverable 2: Summary Statistics on Suspension Coils
+- Deliverable 3: T-Test on Suspension Coils
+- Deliverable 4: Design a Study Comparing the MechaCar to the Competition
+
 ## Linear Regression to Predict MPG
 
 ![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/deliverable%201.png)
@@ -51,23 +67,23 @@ T. Test of Lot 3. There was a statistical difference because the p-value was les
 
 ## Study Design: MechaCar vs Competition
 
-**- What metric or metrics are you going to test?**
+**What metric or metrics are you going to test?**
   - Overall Safety rating. We will compare how the safety ratings of MechaCar's prototypes will compare against the competition. We will need to put each of the vehicles into a "category" bucket based on a letter grade to indicate their overall safety (A, B, C, D, etc.)
   - Vehicle maintenance. We will also compare how often a car is seen for maintenance. We can bucket these maintenance visits into time frames (monthly check-up, 3-month checkup, 6-month check-up, 1-year check-up, 2-year-checkup)
   - Vehicle resale value - we also want to understand if either of the above factors have an impact on the resale value of the vehicle when it is resold as a used card. 
 
-** - What is the null hypothesis or alternative hypothesis?**
+**What is the null hypothesis or alternative hypothesis?**
 
 Null Hypothesis: Safety ratings and regular vehicle maintenance have no impact on resale value. 
 
 Alternative Hypothesis: A higher safety rating and monthly vehicle maintenance can increase the resale value of a car by almost 50%. 
 
 
-What statistical test would you use to test the hypothesis? And why?
+**What statistical test would you use to test the hypothesis? And why?**
 
 Chi-squared Test - "Is there a difference in categorical frequencies between groups?"
 
-What data is needed to run the statistical test?
+**What data is needed to run the statistical test?**
 
 - We will need to know the safety ratings of each of the vehicles for MechaCar and their competitors.
 
