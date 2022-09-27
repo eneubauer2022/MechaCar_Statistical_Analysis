@@ -10,21 +10,21 @@
 
 **- Is the slope of the linear model considered to be zero? Why or why not?**
 
-  No. the p-value is 5.35e-11 which is significantly lower than 0.05. The null hypthoesis must be rejected and that variables have an impact on mpg and are not random factors. 
+  No. the p-value is 5.35e-11 which is significantly lower than 0.05. The null hypothesis must be rejected and that variables have an impact on mpg and are not random factors. 
 
 **- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 
-  Since we have a R-squared value of 0.71, we can determine that 71% of mpg is explained by the variables of our dataframame. I would feel comfortable using this model as as predictor of mpg for MechCar prototypes. 
+  Since we have a R-squared value of 0.71, we can determine that 71% of mpg is explained by the variables of our data frame. I would feel comfortable using this model as as predictor of mpg for MechCar prototypes. 
 
 ## Summary Statistics on Suspension Coils
 
 **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
 
-If we look at the total summary, it seems that maufacturing is meeting the design speficiations by keeps the the suspension coils under 100 pounds per inch.
+If we look at the total summary, it seems that manufacturing is meeting the design specifications by keeps the suspension coils under 100 pounds per inch.
 
 ![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/total%20summary.png)
 
-However, once we breakdown those data points by manufacturing lots - we notice that Lot 3 has a high variance og 170.29, exceeding the 100 pounds per square inch specifications. Lots 1 & 2 fall under those weight specifications. 
+However, once we breakdown those data points by manufacturing lots - we notice that Lot 3 has a high variance of 170.29, exceeding the 100 pounds per square inch specifications. Lots 1 & 2 fall under those weight specifications. 
 
 ![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/lot%20summary.png)
 
@@ -48,3 +48,29 @@ T. Test of Lot 2. There was no statistical difference because the p-value was gr
 T. Test of Lot 3. There was a statistical difference because the p-value was less than 0.05.
 
 ![this is an image](https://github.com/eneubauer2022/MechaCar_Statistical_Analysis/blob/main/lot3.png)
+
+## Study Design: MechaCar vs Competition
+
+**- What metric or metrics are you going to test?**
+  - Overall Safety rating. We will compare how the safety ratings of MechaCar's prototypes will compare against the competition. We will need to put each of the vehicles into a "category" bucket based on a letter grade to indicate their overall safety (A, B, C, D, etc.)
+  - Vehicle maintenance. We will also compare how often a car is seen for maintenance. We can bucket these maintenance visits into time frames (monthly check-up, 3-month checkup, 6-month check-up, 1-year check-up, 2-year-checkup)
+  - Vehicle resale value - we also want to understand if either of the above factors have an impact on the resale value of the vehicle when it is resold as a used card. 
+
+** - What is the null hypothesis or alternative hypothesis?**
+
+Null Hypothesis: Safety ratings and regular vehicle maintenance have no impact on resale value. 
+
+Alternative Hypothesis: A higher safety rating and monthly vehicle maintenance can increase the resale value of a car by almost 50%. 
+
+
+What statistical test would you use to test the hypothesis? And why?
+
+Chi-squared Test - "Is there a difference in categorical frequencies between groups?"
+
+What data is needed to run the statistical test?
+
+- We will need to know the safety ratings of each of the vehicles for MechaCar and their competitors.
+
+- We will need to know how often vehicles are taken in for regular maintenance and the time frame from the last time they received maintenance. 
+
+- We will need to know how much the vehicle was resold for.
